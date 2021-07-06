@@ -3,7 +3,7 @@ import tkinter as tk
 #class Theme, which holds values for the colors and that the program should use for all widgets.  Default values approximate Tkinter defaults.
 class Theme:
 	#default values
-	title = "default theme"
+    title = "default theme"
     bg = "#F0F0F0" #gray94%
     fg = "black"
     contrastbg = "white"
@@ -63,7 +63,7 @@ class Theme:
         return widget
 
 class ThemeAndFont:
-    __init__(self, theme = None, font = None):
+    def __init__(self, theme = None, font = None):
     	if isinstance(theme, Theme):
     		self.theme = theme
     	else:
